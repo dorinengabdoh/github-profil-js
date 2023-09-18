@@ -87,6 +87,7 @@ h2 {
 }
 
 @media screen and (max-width: 768){
+
   .container {
     margin: 0 auto;
     margin-right: 9.5rem;
