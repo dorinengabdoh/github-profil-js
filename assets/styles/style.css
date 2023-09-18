@@ -86,7 +86,7 @@ h2 {
   padding-right: 50px;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768){
   .container {
     margin: 0 auto;
     margin-right: 9.5rem;
