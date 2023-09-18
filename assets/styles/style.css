@@ -29,7 +29,6 @@ h1 {
 #display {
   width: 78%;
   border-radius: 7px;
-  /* padding-left: 20%;   */
   margin-left: 2.5rem;
   margin-bottom: 20px;
   background-color: #fff;
@@ -87,7 +86,7 @@ h2 {
   padding-right: 50px;
 }
 
-@media screen and (max-width:768) {
+@media screen and (max-width: 768) {
   .container {
     margin: 0 auto;
     margin-right: 9.5rem;
@@ -97,7 +96,7 @@ h2 {
   button {
     margin: 0 auto;
   }
-  
+ 
   #display {
     width: fit-content;
   }
