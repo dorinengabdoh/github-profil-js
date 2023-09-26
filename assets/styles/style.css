@@ -1,0 +1,103 @@
+.input {
+  width: 60%;
+  margin-left: 3rem;
+  padding: 6px;
+  border-radius: 5px;
+  border-radius: none;
+  border: none;
+}
+
+.container {
+  width: 500px;
+  overflow: hidden;
+  min-width: 90px;
+  margin-top: 100px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  margin-left: 590px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #346969;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#display {
+  width: 78%;
+  border-radius: 7px;
+  margin-left: 2.5rem;
+  margin-bottom: 20px;
+  background-color: #fff;
+  display: flex;
+}
+
+p {
+  padding-left: 40px;
+}
+
+strong {
+  background-color: #3b4278;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  background-color: #7fffd4;
+}
+
+.hill {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  padding-top: 30px;
+  width: 140%;
+}
+
+h2 {
+  padding-left: 40px;
+}
+
+.info-user {
+  padding-left: -800px;
+}
+
+#repos {
+  display: flex;
+  text-decoration: none;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 768) {
+  .container {
+    margin: 0 auto;
+    margin-right: 9.5rem;
+    width: 30%;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+
+  #display {
+    width: fit-content;
+  }
+}

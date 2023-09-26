@@ -8,16 +8,16 @@ const getUser = async (username) => {
   const card = `
     <div id="display">
       <div>
-        <img class="avatar" src="${data.avart_url}" alt="github-picture">
+        <img class="avatar" src="${data.avatar_url}" alt="github-picture">
       </div>
       <div class="info-user">
-        <h2>${data.name}</h2>
+        <h2><a>${data.name}</a></h2>
         <p>${data.bio}</p>
         <ul>
           <li>${data.followers} <strong>followers</strong></li>
           <li>${data.following} <strong>following</strong></li>
           <li>${data.public_repos}<strong>repos</strong></li>
-        </ul>
+        </ul>stuck
         <div id="repos">
           </div>
       </div>
@@ -27,7 +27,7 @@ const getUser = async (username) => {
   getRepos(username)
 }
 
-getUser('Abuemkeze Chu')
+getUser('abuemkezechu')
 
 const getRepos = async (username) => {
   const repos = document.querySelector('#repos')
@@ -45,7 +45,7 @@ const getRepos = async (username) => {
   )
 }
 
-const formSubmit = () => {
+const formSubmit = (e) => {
   if (searchBox.value !== '') {
     getUser(searchBox.value)
     searchBox.value = ''
