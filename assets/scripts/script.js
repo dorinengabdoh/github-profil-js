@@ -8,16 +8,16 @@ const getUser = async (username) => {
   const card = `
     <div id="display">
       <div>
-        <img class="avatar" src="${data.avart_url}" alt="github-picture">
+        <img class="avatar" src="${data.avatar_url}" alt="github-picture">
       </div>
       <div class="info-user">
-        <h2>${data.name}</h2>
+        <h2><a>${data.name}</a></h2>
         <p>${data.bio}</p>
         <ul>
           <li>${data.followers} <strong>followers</strong></li>
           <li>${data.following} <strong>following</strong></li>
           <li>${data.public_repos}<strong>repos</strong></li>
-        </ul>
+        </ul>stuck
         <div id="repos">
           </div>
       </div>
@@ -27,10 +27,11 @@ const getUser = async (username) => {
   getRepos(username)
 }
 
-getUser('Abuemkeze Chu')
+getUser('richkum')
 
-const getRepos = async (username) => {
-  const repos = document.querySelector('#repos')
+const getRepos = async(username) => {
+  try {
+    const repos = document.querySelector('#repos')
   const response = await fetch(APIURL + username + '/repos')
   const data = await response.json()
   data.forEach(
@@ -43,10 +44,14 @@ const getRepos = async (username) => {
       repos.appendchild(element)
     }
   )
+  } catch(error){
+    createErrorCard('No profile with this username')
+  }
+  
 }
 
-const formSubmit = () => {
-  if (searchBox.value !== '') {
+const formSubmit = (e) => {
+  if (searchBox.value !='') {
     getUser(searchBox.value)
     searchBox.value = ''
   }

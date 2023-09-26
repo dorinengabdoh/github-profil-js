@@ -15,6 +15,6 @@ This little javascript project is about view the Github profil.
 - can be used for store.
 
 ## an Image
-![alt text](./assets/images/Screenshot%20from%202023-09-18%2016-18-22.png).
+![alt text](./assets/images/Screenshot%20from%202023-09-25%2011-32-58.png).
 ## autor
 - github:( https://github.com/dorinengabdoh);
