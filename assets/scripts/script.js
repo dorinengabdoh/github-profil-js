@@ -29,9 +29,8 @@ const getUser = async (username) => {
 
 getUser('richkum')
 
-const getRepos = async(username) => {
-  try {
-    const repos = document.querySelector('#repos')
+const getRepos = async (username) => {
+  const repos = document.querySelector('#repos')
   const response = await fetch(APIURL + username + '/repos')
   const data = await response.json()
   data.forEach(
@@ -44,14 +43,10 @@ const getRepos = async(username) => {
       repos.appendchild(element)
     }
   )
-  } catch(error){
-    createErrorCard('No profile with this username')
-  }
-  
 }
 
 const formSubmit = (e) => {
-  if (searchBox.value !='') {
+  if (searchBox.value !== '') {
     getUser(searchBox.value)
     searchBox.value = ''
   }
