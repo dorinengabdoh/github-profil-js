@@ -16,5 +16,3 @@ This little project is about view the profil.
 
 ## an Image
 ![alt text](./assets/images/Screenshot%20from%202023-09-25%2011-32-58.png).
-## autor
-- Github:( https://github.com/dorinengabdoh);
