@@ -27,7 +27,7 @@ const getUser = async (username) => {
   getRepos(username)
 }
 
-getUser('richkum')
+getUser('abuemkezechu')
 
 const getRepos = async (username) => {
   const repos = document.querySelector('#repos')
